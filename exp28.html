@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e3eaff;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 350px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        input {
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            color: white;
+            background: #4169e1;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .link {
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Registration and Login</h1>
+
+    <div class="container">
+        <h2>Registration</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password" minlength="6" required>
+
+            <label>Confirm Password:</label>
+            <input type="password" placeholder="Confirm password" minlength="6" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+            <div class="link"><a href="#forgot">Forgot Password?</a></div>
+        </form>
+    </div>
+
+    <div class="container" id="forgot">
+        <h2>Forgot Password</h2>
+        <form>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Profile Setup</h2>
+        <form>
+            <label>Username:</label>
+            <input type="text" placeholder="Enter username" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter phone number" pattern="[0-9]{10}" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" required>
+
+            <label>Address:</label>
+            <input type="text" placeholder="Enter address">
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+</body>
+</html>
